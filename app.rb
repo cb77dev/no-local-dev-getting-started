@@ -13,7 +13,6 @@ end
 class Contact < ActiveRecord::Base
   self.table_name = 'salesforce.user'
 end
-
 get "/contacts" do
   @contacts = Contact.all
   erb :index
